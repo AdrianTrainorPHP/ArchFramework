@@ -1,10 +1,16 @@
 <?php
 require_once 'Classes/AutoLoader.php';
 
-$predefinedAutoLoadDirectories = array(
-  'Core', 'Config', 'Source', 'Templates', 'Tests'
-);
 $autoLoader = new AutoLoader();
+// register core paths
+$autoLoader->registerPaths(array(''));
+
+// register vendor paths
+$autoLoader->registerPaths(array(
+  '/Vendors/vendor/twig/twig/lib/Twig/'
+));
+
+$autoLoader->setIncludePaths();
 
 // Create class autoloader.
 spl_autoload_register('archAutoLoad');

@@ -1,6 +1,6 @@
 <?php
 namespace Arch\Source\Models;
-use Arch\Core\Model as Model;
+use Arch\Core\MVC\Model as Model;
 
 class SampleModel extends Model
 {

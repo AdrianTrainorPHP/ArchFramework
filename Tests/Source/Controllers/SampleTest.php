@@ -1,5 +1,5 @@
 <?php
-namespace Test\Controllers;
+namespace Tests\Source\Controllers;
 
 class SampleTest extends \PHPUnit_Framework_TestCase
 {

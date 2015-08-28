@@ -1,2 +1,2 @@
 <?php
-require_once '../Core/Config/autoLoader.php';
+require_once '../Core/Config/bootstrap.php';
